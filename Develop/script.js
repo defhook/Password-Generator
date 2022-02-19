@@ -13,11 +13,6 @@ function writePassword() {
 
 }
 
-/* 
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-*/
 
 //Declaring a Function 
 function generatePassword() {
@@ -83,7 +78,13 @@ function generatePassword() {
      document.getElementById("password").value = password;
 
 
-  return randomPass; //Calling the variable 
+  return randomPass;  
+}
+
+function copyPassword() {
+  var copyText = document.getElementById("password");
+  copyText.select();
+  //document.execCommand("copy");
 }
 
 // Add event listener to generate button
