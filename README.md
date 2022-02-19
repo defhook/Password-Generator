@@ -15,4 +15,4 @@ https://defhook.github.io/Password-Generator/
 🙉 business
 
 
-![](/assets/password_generator_screenshot.png)
+![]("C:\Users\defho\OneDrive\Desktop\projects\friendly-parakeet\assets\password_generator_screenshot.png")
