@@ -15,4 +15,4 @@ https://defhook.github.io/Password-Generator/
 🙉 business
 
 
-![](/assets/images/passwordgeneratorscreenshot.png)
+![](/assets/images/Screenshot.png)
