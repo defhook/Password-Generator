@@ -82,7 +82,7 @@ function generatePassword() {
 }
 
 
-/*
+/* was unable to create working copy function
   function copyPassword() {
   var copyText = document.getElementById("password");
   copyText.select();
