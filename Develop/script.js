@@ -25,8 +25,8 @@ function generatePassword() {
 //|| - or 
 
 //if password length is less than 8 or its greater than 128 , show the prompt again 
-  if (passwordLength < 8 && passwordLength > 128 ) {
-    passwordLength = parseInt(window.prompt("Please re-enter password length from 8 to 128 characters ?"));
+  if (passwordLength < 8 || passwordLength > 128 ) {
+    passwordLength = (window.prompt("Please re-enter password length from 8 to 128 characters ?"));
     console.log("updated password length is " + passwordLength);
   }
   //password criteria 
@@ -81,11 +81,13 @@ function generatePassword() {
   return randomPass;  
 }
 
-function copyPassword() {
+
+/*
+  function copyPassword() {
   var copyText = document.getElementById("password");
   copyText.select();
   //document.execCommand("copy");
-}
+} */
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
