@@ -70,12 +70,13 @@ function generatePassword() {
 
 
     // loop for math variables
-     for (var i = 0; i <= passwordLength; i++) {
+     for (var i = 0; i <= passwordLength -1; i++) {
        var randomNumber = Math.floor(Math.random() * allowedCharList.length);
-       randomPass += allowedCharList.substring(randomNumber, randomNumber +1);
+       randomPass += allowedCharList.charAt(randomNumber);
+       //console.log(randomNumber, passwordLength, randomPass.substring(0, passwordLength));
      }
 
-     document.getElementById("password").value = password;
+     //document.getElementById("password").value = password;
 
 
   return randomPass;  
